@@ -391,3 +391,36 @@ html {
     margin: 0 auto;
     max-width: 1440px;
 }
+
+/* Header start*/
+.header {
+    background-color: #030303;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.header__logo {
+    padding-top: 75px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px
+}
+
+.logo__img {
+    width: 49px;
+    height: 26px;
+    background: url(/assets/svg/logo.svg);
+}
+
+.logo__name {
+    margin: 0;
+    font-family: Forum;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
