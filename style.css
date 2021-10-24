@@ -374,3 +374,15 @@
 html {
     font: 22px Roboto sans-serif;
 }
+
+.section {
+    padding: 75px 0;
+}
+
+.dark-section {
+    background-color: #030303;
+}
+
+.video-section {
+    padding-top: 90px;
+}
