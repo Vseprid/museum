@@ -394,6 +394,12 @@
 html {
     font: 22px 'Roboto';
     font-weight: 100;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 li {
@@ -424,13 +430,13 @@ li {
 }
 
 .header-container {
+    padding-top: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
 .header__logo {
-    padding-top: 75px;
     display: flex;
     align-items: flex-start;
     gap: 20px
@@ -440,10 +446,11 @@ li {
     width: 49px;
     height: 26px;
     background: url(/assets/svg/logo.svg);
+    transition: .5s;
 }
 
 .logo__img:hover {
-    filter: sepia(90%);
+    filter: invert(50%);
 }
 
 .logo__name {
@@ -451,14 +458,17 @@ li {
     font-family: Forum;
     font-size: 28px;
     text-transform: uppercase;
+    letter-spacing: 5px;
 
 }
 
 .header__links {
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     gap: 76px;
     max-width: 720px;
+    height: 100%;
     font-weight: 100;
     letter-spacing: 2px;
 }
