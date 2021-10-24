@@ -375,6 +375,10 @@ html {
     font: 22px Roboto sans-serif;
 }
 
+li {
+    list-style: none;
+}
+
 .section {
     padding: 75px 0;
 }
@@ -394,6 +398,7 @@ html {
 
 /* Header start*/
 .header {
+    color: #FFFFFF;
     background-color: #030303;
 }
 
@@ -416,11 +421,22 @@ html {
     background: url(/assets/svg/logo.svg);
 }
 
+.logo__img:hover {
+    filter: sepia(90%);
+}
+
 .logo__name {
     margin: 0;
     font-family: Forum;
     font-size: 28px;
     text-transform: uppercase;
-    color: #FFFFFF;
 
+}
+
+.header__links {
+    display: flex;
+    justify-content: space-between;
+    gap: 76px;
+    max-width: 720px;
+    font-weight: 200;
 }
