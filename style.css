@@ -402,6 +402,11 @@ a {
     text-decoration: none;
 }
 
+ul {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
 li {
     list-style: none;
 }
@@ -462,13 +467,21 @@ li {
 
 }
 
+.header__nav {
+  width: 50%;
+  max-width: 720px;
+}
+
 .header__links {
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-between;
-    gap: 76px;
-    max-width: 720px;
-    height: 100%;
+    align-items: stretch;
+    /* gap: 76px; */
     font-weight: 100;
     letter-spacing: 2px;
+}
+
+.header__link {
+  padding: 0 10px;
 }
