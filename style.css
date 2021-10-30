@@ -489,13 +489,20 @@ li {
 }
 
 .header__links {
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-between;
-    align-items: stretch;
-    /* gap: 76px; */
-    font-weight: 100;
-    letter-spacing: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.header__a:hover {
+  transition: .3s;
+
+}
+
+.header__a:hover {
+  color: #9D8665;
 }
 
 .header__link {
