@@ -510,6 +510,15 @@ li {
 }
 
 /* Welcome starts */
+.welcome {
+  background: url(assets/img/background.png) no-repeat;
+  background-color: #030303;
+  background-position: calc(100% - 20px) calc(100% - 10px);
+}
+
+.welcome__container {
+  margin-bottom: 246px;
+}
 
 .welcome__subtitle {
   margin-bottom: 76px;
