@@ -393,7 +393,7 @@
 
 html {
     font: 22px 'Roboto';
-    font-weight: 100;
+    letter-spacing: 2px;
     scroll-behavior: smooth;
 }
 
@@ -428,7 +428,23 @@ li {
     max-width: 1440px;
 }
 
+.section-title {
+  font-family: Forum;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.dark-title {
+  color: #FFFFFF;
+}
+
 /* Header start*/
+.page__header {
+  padding-bottom: 125px;
+}
+
 .header {
     color: #FFFFFF;
     background-color: #030303;
@@ -484,4 +500,25 @@ li {
 
 .header__link {
   padding: 0 10px;
+}
+
+/* Welcome starts */
+
+.welcome__subtitle {
+  margin-bottom: 76px;
+  font-weight: 300;
+  font-size: 28px;
+  color: #FFFFFF;
+}
+
+.button-link {
+  padding: 24px 64px;
+  border-radius: 10px;
+  background-color: #710707;
+  transition: .4s;
+}
+
+.button-link:hover,
+.button-link:focus {
+  background-color: #9D8665;
 }
