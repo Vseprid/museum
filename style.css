@@ -398,7 +398,6 @@ html {
 }
 
 a {
-    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -513,7 +512,8 @@ li {
   letter-spacing: 2px;
 }
 
-.header__a:hover {
+.header__a {
+  color: #FFFFFF;
   transition: .3s;
 
 }
@@ -551,6 +551,7 @@ li {
 .button-link {
   padding: 24px 64px;
   border-radius: 10px;
+  color: #FFFFFF;
   background-color: #710707;
   transition: .4s;
 }
@@ -564,4 +565,42 @@ li {
 
 .tour__title {
   margin-bottom: 103px;
+}
+
+.tour__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 78px 60px;
+}
+
+.tour__card {
+  display: block;
+  color: #000000;
+}
+
+.card__title {
+  position: relative;
+  margin: 25px 0px 21px;
+  font-size: 32px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.card__title::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  height: 3px;
+  width: 75%;
+  background-color: #710707;
+}
+
+.card__virtual-tour {
+  margin-bottom: 10px;
+}
+
+.card__view {
+  margin: 0px;
+  font-size: 18px;
 }
