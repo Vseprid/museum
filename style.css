@@ -626,3 +626,14 @@ li {
 .veil {
   color: #9D8665;
 }
+
+.explore__img {
+  flex-basis: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .explore__container {
+    flex-direction: column-reverse;
+  }
+}
+
