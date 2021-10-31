@@ -415,6 +415,7 @@ li {
 }
 
 .dark-section {
+  color: #FFFFFF;
     background-color: #030303;
 }
 
@@ -545,7 +546,6 @@ li {
   margin-bottom: 76px;
   font-weight: 300;
   font-size: 28px;
-  color: #FFFFFF;
 }
 
 .button-link {
@@ -603,4 +603,26 @@ li {
 .card__view {
   margin: 0px;
   font-size: 18px;
+}
+
+/* Tour end */
+
+/* Explore starts */
+
+.explore__container {
+  display: flex;
+  gap: 60px;
+}
+
+.explore__title {
+  margin-bottom: 103px;
+}
+
+.explore__inf {
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+.veil {
+  color: #9D8665;
 }
