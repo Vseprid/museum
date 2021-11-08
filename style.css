@@ -425,7 +425,7 @@ li {
 
 .dark-section {
   color: #FFFFFF;
-    background-color: #030303;
+  background-color: #030303;
 }
 
 .video-section {
@@ -484,7 +484,7 @@ li {
     align-items: center;
   }
 
-.header__logo {
+.logo {
     display: flex;
     align-items: flex-start;
     gap: 20px
@@ -515,21 +515,18 @@ li {
   max-width: 720px;
 }
 
-.header__links {
+.nav__links {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
   font-weight: 100;
-  letter-spacing: 2px;
 }
 
-.header__a {
+.nav__a {
   color: #FFFFFF;
-  transition: .3s;
-
+  transition: .3s
 }
 
-.header__a:hover {
+.nav__a:hover {
   color: #9D8665;
 }
 
@@ -650,10 +647,6 @@ li {
 /* Explore end */
 
 /* Video start*/
-/* .video__container {
-  display: flex;
-  flex-wrap: wrap;
-} */
 
 .video-img {
   background: #000000;
@@ -884,3 +877,41 @@ li {
 .contacts__location {
   max-width: 960px;
 }
+
+/* Contacts end */
+
+/* Footer start */
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__nav {
+  position: relative;
+  right: 200px;
+}
+
+.footer__links {
+  flex-flow: column wrap;
+  max-height: 150px;
+  gap: 30px 153px;
+}
+
+.nav-social {
+  display: flex;
+  align-self: flex-end;
+  gap: 24px;
+}
+
+.icon-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  border: 1px solid #666666;
+  border-radius: 50px;
+}
+
+
