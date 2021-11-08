@@ -404,6 +404,7 @@
   --white: #FFFFFF;
   --black: #030303;
   --standart-font: 22px;
+  --middle-font: 28px;
   --section-title: 80px;
   --little-spacing: 2px;
   --big-spacing: 5px;
@@ -871,9 +872,10 @@ li {
   max-width: 310px;
 }
 
-.inf__h3 {
+.inf__p {
   margin-bottom: 36px;
-  font-size: 25px;
+  font-size: var(--middle-font);
+  font-weight: 600;
 }
 
 .contacts__address {
