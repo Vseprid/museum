@@ -398,10 +398,19 @@
   src: local(''),
        url('assets/fonts/roboto-v29-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('assets/fonts/roboto-v29-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
+  }
+
+:root {
+  --white: #FFFFFF;
+  --black: #030303;
+  --standart-font: 22px;
+  --section-title: 80px;
+  --little-spacing: 2px;
+  --big-spacing: 5px;
+  }
 
 html {
-    font: 22px 'Roboto';
+    font: var(--standart-font) 'Roboto';
     letter-spacing: 2px;
     scroll-behavior: smooth;
 }
@@ -424,8 +433,8 @@ li {
 }
 
 .dark-section {
-  color: #FFFFFF;
-  background-color: #030303;
+  color: var(--white);
+  background-color: var(--black);
 }
 
 .video-section {
@@ -440,14 +449,14 @@ li {
 .section-title {
   margin: 0;
   font-family: Forum;
-  font-size: 80px;
+  font-size: var(--section-title);
   line-height: 90px;
-  letter-spacing: 5px;
+  letter-spacing: var(--big-spacing);
   text-transform: uppercase;
 }
 
 .dark-title {
-  color: #FFFFFF;
+  color: var(--white);
 }
 
 .light-title {
@@ -473,8 +482,8 @@ li {
 }
 
 .header {
-    color: #FFFFFF;
-    background-color: #030303;
+    color: var(--white);
+    background-color: var(--black);
 }
 
 .header-container {
@@ -506,7 +515,7 @@ li {
     font-family: Forum;
     font-size: 28px;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: var(--big-spacing);
 
 }
 
@@ -522,7 +531,7 @@ li {
 }
 
 .nav__a {
-  color: #FFFFFF;
+  color: var(--white);
   transition: .3s
 }
 
@@ -537,7 +546,7 @@ li {
 /* Welcome starts */
 .welcome {
   background: url(assets/img/background.png) no-repeat;
-  background-color: #030303;
+  background-color: var(--black);
   background-position: calc(100%) calc(100%);
 }
 
@@ -558,7 +567,7 @@ li {
 .button-link {
   padding: 24px 64px;
   border-radius: 10px;
-  color: #FFFFFF;
+  color: var(--white);
   background-color: #710707;
   transition: .4s;
 }
@@ -589,7 +598,7 @@ li {
   position: relative;
   margin: 25px 0px 21px;
   font-size: 32px;
-  letter-spacing: 5px;
+  letter-spacing: var(--big-spacing);
   text-transform: uppercase;
 }
 
@@ -791,7 +800,7 @@ li {
   left: 0;
   height: 17px;
   width: 17px;
-  border: 2px solid #FFFFFF;
+  border: 2px solid var(--white);
   border-radius: 50%;
 }
 
@@ -804,7 +813,7 @@ li {
 	width: 7px;
 	height: 7px;
 	border-radius: 50%;
-	background: #FFFFFF;
+	background: var(--white);
 }
 
 .form__ratio:checked ~ .checkmark::after {
@@ -820,11 +829,11 @@ li {
   display: flex;
   margin-bottom: 35px;
   height: 50px;
-  border: 3px solid #FFFFFF;
+  border: 3px solid var(--white);
 }
 
 .age-selection__btn {
-  color: #FFFFFF;
+  color: var(--white);
   border: none;
   background: transparent;
 }
