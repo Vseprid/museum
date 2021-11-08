@@ -580,7 +580,7 @@ li {
 .tour__cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 78px 60px;
+  gap: 78px 59px;
 }
 
 .tour__card {
