@@ -124,7 +124,48 @@
         </div>
       </div>
     </section>
-    <section class="section dark-section"></section>
+    <section class="section dark-section">
+      <div class="container">
+        <h2 class="section-title dark-title underline-title ticket__title">Buy tickets</h2>
+        <div class="ticket__content">
+          <img src="assets/img/ticket-img.jpg" alt="good image" class="ticket__img">
+          <form action="" method="get" class="ticket__form">
+            <fieldset class="form__field">
+              <legend class="form__legend form__legend_margin_big">Ticket Type</legend>
+              <label class="form__label">Permanent exhibition
+                <input type="radio" name="radio" id="" class="form__ratio" checked>
+                <span class="checkmark"></span>
+              </label>
+              <label class="form__label">Temporary exhibition
+                <input type="radio" name="radio" id="" class="form__ratio">
+                <span class="checkmark"></span>
+              </label>
+              <label class="form__label">Combined Admission
+                <input type="radio" name="radio" id="" class="form__ratio">
+                <span class="checkmark"></span>
+              </label>
+            </fieldset>
+            <fieldset class="form__field">
+              <legend class="form__legend form__legend_margin_litle">Amount</legend>
+              <label class="form-age__label" for="eighteenPlus">Basic 18+</label>
+              <div class="age__selection">
+                <button class="age-selection__btn" type="button" onclick="this.nextElementSibling.stepDown()">–</button>
+                <input type="number" min="0" max="20" value="1" readonly class="number" id="eighteenPlus">
+                <button class="age-selection__btn" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+              </div>
+              <label class="form-age__label" for="sixtyFivePlus">Senior 65+</label>
+              <div class="age__selection">
+                <button class="age-selection__btn" type="button" onclick="this.nextElementSibling.stepDown()">–</button>
+                <input type="number" min="0" max="20" value="1" readonly class="number" id="sixtyFivePlus">
+                <button class="age-selection__btn" type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+              </div>
+              <p class="form__legend form__legend_p">Total €220</p>
+              <input class="field__submit" type="submit" value="Buy Now">
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
     <section class="section"></section>
   </main>
   <footer class="footer">

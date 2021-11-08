@@ -391,6 +391,15 @@
          url('assets/fonts/roboto-v29-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('assets/fonts/roboto-v29-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('assets/fonts/roboto-v29-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 html {
     font: 22px 'Roboto';
     letter-spacing: 2px;
@@ -429,6 +438,7 @@ li {
 }
 
 .section-title {
+  margin: 0;
   font-family: Forum;
   font-size: 80px;
   line-height: 90px;
@@ -690,14 +700,14 @@ li {
   width: 155px;
 }
 
-/* .progress::-webkit-slider-thumb {
+.progress::-webkit-slider-thumb {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   -webkit-appearance: none;
   cursor: ew-resize;
   background: #434343;
-} */
+}
 
 .fullscreen {
   transition: .2s;
@@ -723,3 +733,126 @@ li {
   line-height: 38px;
   font-weight: 300;
 }
+
+/* Video end */
+
+/* Ticket start */
+.ticket__title {
+  margin-bottom: 103px;
+}
+
+.ticket__content {
+  display: flex;
+  gap: 60px;
+}
+
+.ticket__img {
+  width: 50%;
+}
+
+.ticket__form {
+  display: flex;
+  justify-content: space-between;
+  width: calc(50% - 60px);
+}
+
+.form__field {
+  border: none;
+}
+
+.form__legend {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.form__legend_margin_big {
+  margin-bottom: 50px;
+}
+
+.form__legend_margin_litle {
+  margin-bottom: 11px;
+  text-align: right;
+}
+
+.form__label {
+  position: relative;
+  display: block;
+  margin-bottom: 54px;
+  padding-left: 40px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.form__ratio {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: calc(50% - 8.5px);
+  left: 0;
+  height: 17px;
+  width: 17px;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 3px;
+	left: 3px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: #FFFFFF;
+}
+
+.form__ratio:checked ~ .checkmark::after {
+  display: block;
+}
+
+.form-age__label {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.age__selection {
+  display: flex;
+  margin-bottom: 35px;
+  height: 50px;
+  border: 3px solid #FFFFFF;
+}
+
+.age-selection__btn {
+  color: #FFFFFF;
+  border: none;
+  background: transparent;
+}
+
+.number {
+  /* display: inline-block;
+  margin: 12px 0px; */
+  all: unset;
+  width: 4em;
+  text-align: center;
+}
+
+.form__legend_p {
+  margin: 50px 0;
+}
+
+.field__submit {
+  width: 175px;
+  height: 50px;
+  letter-spacing: 2px;
+}
+
+
+
