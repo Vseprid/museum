@@ -629,7 +629,12 @@ li {
 
 .explore__container {
   display: flex;
-  gap: 60px;
+  justify-content: space-between;
+  gap: 55px;
+}
+
+.explore__text {
+  width: 100%;
 }
 
 .explore__title {
@@ -637,8 +642,11 @@ li {
 }
 
 .explore__inf {
+  width: 98%;
   margin-bottom: 25px;
   font-weight: 300;
+  line-height: 38px;
+  letter-spacing: 0px;
 }
 
 .veil {
@@ -646,7 +654,9 @@ li {
 }
 
 .explore__img {
-  flex-basis: 100%;
+  position: relative;
+  bottom: -15px;
+  flex-basis: 108%;
 }
 
 @media screen and (max-width: 1200px) {
