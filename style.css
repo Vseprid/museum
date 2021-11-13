@@ -899,7 +899,7 @@ li {
 /* Contacts start */
 
 .contacts__title {
-  margin-bottom: 113px;
+  margin-bottom: 103px;
 }
 
 .contacts__wrapper {
@@ -912,9 +912,11 @@ li {
 }
 
 .inf__p {
-  margin-bottom: 36px;
+  margin-top: 10px;
+  margin-bottom: 31px;
   font-size: var(--middle-font);
   font-weight: 600;
+  letter-spacing: 0px;
 }
 
 .contacts__address {
