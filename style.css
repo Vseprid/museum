@@ -625,6 +625,11 @@ li {
   height: 3px;
   width: 75%;
   background-color: #710707;
+  transition: .3s;
+}
+
+.tour__card:hover .card__title::after {
+  width: 100%;
 }
 
 .card__virtual-tour {
