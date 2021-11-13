@@ -600,7 +600,7 @@ li {
   position: relative;
   margin: 18px 0px 0px;
   font-size: 32px;
-  letter-spacing: var(--big-spacing);
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
