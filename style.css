@@ -546,13 +546,26 @@ li {
 
 /* Welcome starts */
 .welcome {
+  position: relative;
   padding-bottom: 90px;
-  background: url(assets/img/background.png) no-repeat;
-  background-color: var(--black);
-  background-position: calc(100% + 35px) calc(100% + 5px);
+}
+
+.wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  max-width: 1950px;
+  margin: 0 auto;
+  background: url(assets/img/background.jpg) no-repeat;
+  background-position: calc(99%) calc(100% + 5px);
 }
 
 .welcome__container {
+  position: relative;
+  z-index: 1;
   margin-bottom: 180px;
 }
 
