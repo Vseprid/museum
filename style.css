@@ -403,6 +403,7 @@
 :root {
   --white: #FFFFFF;
   --black: #030303;
+  --gold: #9D8665;
   --standart-font: 22px;
   --middle-font: 28px;
   --section-title: 80px;
@@ -461,7 +462,7 @@ li {
 }
 
 .light-title {
-  color: #9D8665;
+  color: var(--gold);
 }
 
 .underline-title {
@@ -537,7 +538,7 @@ li {
 }
 
 .nav__a:hover {
-  color: #9D8665;
+  color: var(--gold);
 }
 
 .header__link {
@@ -589,7 +590,7 @@ li {
 
 .button-link:hover,
 .button-link:focus {
-  background-color: #9D8665;
+  background-color: var(--gold);
 }
 
 /* Tour start */
@@ -668,7 +669,7 @@ li {
 }
 
 .veil {
-  color: #9D8665;
+  color: var(--gold);
 }
 
 .explore__img {
@@ -982,6 +983,18 @@ li {
   width: 48px;
   border: 1px solid #666666;
   border-radius: 50px;
+  transition: .4s;
 }
 
+.icon-social:hover {
+  border-color: var(--gold);
+}
+
+.icon-social path {
+  transition: .4s;
+}
+
+.icon-social:hover path {
+  fill: var(--gold);
+}
 
