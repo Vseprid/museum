@@ -941,13 +941,13 @@ li {
 
 .footer__nav {
   position: relative;
-  right: 200px;
+  right: 255px;
 }
 
 .footer__links {
   flex-flow: column wrap;
   max-height: 150px;
-  gap: 30px 153px;
+  gap: 23px 155px;
 }
 
 .nav-social {
